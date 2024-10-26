@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  build:
+    build: 
+      context: ..
+      dockerfile: .docker/Dockerfile.debian12slim
+    volumes:
+      - ../:/app
+    working_dir: /app
+    command: ["/bin/sh", "-c", "cmake -B build -G Ninja && cmake --build build"]
+
+  run:
+    build: 
+      context: ..
+      dockerfile: .docker/Dockerfile.debian12slim
+    volumes:
+      - ../:/app
+    tty: true  # Required for ncurses
+    stdin_open: true  # Required for interactive input
+    working_dir: /app
+    command: ["/bin/sh", "-c", "./build/cursed_eyes"]
+    depends_on:
+      - build

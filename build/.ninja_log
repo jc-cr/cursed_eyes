@@ -1,0 +1,6 @@
+# ninja log v5
+216	245	1729927847520631355	cursor_eyes	d0db03604e8da7a4
+1	216	1729927847492632748	CMakeFiles/cursor_eyes.dir/src/main.cc.o	c93e8e3a1c2ae4cb
+1	355	1729924299374626892	CMakeFiles/cursed_eyes.dir/src/main.cc.o	d6d4c433f108f609
+355	428	1729924299446626742	cursed_eyes	d1a382d66ffe9103
+1	185	1729927304730428941	CMakeFiles/cursor_eyes.dir/src/eye.cc.o	760cedf671fac4e7
